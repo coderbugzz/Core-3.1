@@ -37,7 +37,6 @@ namespace Core_3._1
             });
 
 
-
             services.AddControllersWithViews();
         }
 
@@ -55,6 +54,8 @@ namespace Core_3._1
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
